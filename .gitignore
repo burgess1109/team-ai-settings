@@ -1,0 +1,27 @@
+# ⚠️ 注意：這個 repo 的「內容」本身就放在 dot 目錄裡
+#   settings/.claude/rules/
+#   settings/.agents/skills/
+# 絕對不要加 `.claude/`、`.agents/`、`.*` 這類寬鬆 pattern，
+# 那會把要分發的團隊設定整包排除掉，而且 clone 的人不會收到任何錯誤——
+# 他們只會發現「團隊設定沒生效」，然後查半天。
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# 個人層級的 Claude Code 設定（不該進版控）
+CLAUDE.local.md
+**/settings.local.json
+
+# 編輯器暫存
+*.swp
+*.swo
+*~
